@@ -19,9 +19,8 @@ export class RequestsService {
 
   getSingleProduct(key: string) {
     return new Promise((resolve, reject) => {
-      // console.log(`${environment.baseUrl}products/${key}`)
       this.http.get(`${environment.baseUrl}products/${key}`).subscribe(
-        (data) => {resolve(data); console.log(data)},
+        (data) => resolve(data),
         (err) => reject(err)
       );
     });
