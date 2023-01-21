@@ -1,0 +1,25 @@
+:host{
+    display: flex;
+    justify-content: space-evenly;
+    // align-items: center;
+    flex-wrap: wrap;
+    margin: 4%;
+    .details{
+        width: 45%;
+        min-width: 300px;
+        text-align: left;
+        background-color: #8080804a;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        
+    }
+    .image-view {
+        max-width: 300px;
+        margin-right: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .tail{
+        display: flex;
+        justify-content: space-between;
+    }
+}
