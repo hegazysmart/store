@@ -1,0 +1,30 @@
+<h2>Add New product</h2>
+<form action="" [formGroup]="addProductForm" (submit)="onSubmit()">
+  <mat-form-field class="example-full-width">
+    <mat-label>Title</mat-label>
+    <input matInput placeholder="title" formControlName="title" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>price</mat-label>
+    <input matInput placeholder="price" formControlName="price" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>description</mat-label>
+    <input matInput placeholder="description" formControlName="description" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>image</mat-label>
+    <input matInput placeholder="image" formControlName="image" />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>category</mat-label>
+    <input matInput placeholder="category" formControlName="category" />
+  </mat-form-field>
+  <button type="submit" class="submit" color="primary">
+    submit
+  </button>
+</form>
